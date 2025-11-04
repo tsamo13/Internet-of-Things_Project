@@ -54,7 +54,10 @@ Run the Flask application to visualize the data.
 The application will run at: http://127.0.0.1:5000.
 
 5. Train Models and Predict Value
+
 Using the collected data, you can train models to predict future temperature and humidity values.
+
+<br>
 
 To train the ARIMA, SARIMAX, LSTM, and SimpleRNN models:
 
