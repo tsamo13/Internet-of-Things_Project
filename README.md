@@ -31,21 +31,21 @@ The data were prepared in pandas DataFrames, and models such as ARIMA and LSTM w
 More details can be found in the file model_training.ipynb, and screenshots are included in the report.
 ## Execution Instructions
 
-- 1. Install Contiki-NG and Configure the Environment
+1. Install Contiki-NG and Configure the Environment
 
-- 2. Start Data Collection
+2. Start Data Collection
 
 On the parent node, run the application to collect data from the sensors and send them to the named pipe.
 
  #### make TARGET=sky PORT=/dev/ttyUSB0 serialdump > out_pipe
 
-- 3. Store Data in MongoDB
+3. Store Data in MongoDB
 
 Run the Python script store_data.py to save the data from the named pipe to MongoDB.
 
  #### python3 store_data.py
 
-- 4. Start the Flask Server
+4. Start the Flask Server
 
 Run the Flask application to visualize the data.
 
@@ -53,8 +53,7 @@ Run the Flask application to visualize the data.
 
 The application will run at: http://127.0.0.1:5000.
 
-- 5. Train Models and Predict Value
-
+5. Train Models and Predict Value
 Using the collected data, you can train models to predict future temperature and humidity values.
 
 To train the ARIMA, SARIMAX, LSTM, and SimpleRNN models:
